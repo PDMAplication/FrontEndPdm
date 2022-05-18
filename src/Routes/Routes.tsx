@@ -4,8 +4,8 @@ import { createStackNavigator } from '@react-navigation/stack'
 
 import {Login} from '../Pages/Login';
 import {Cadastro} from '../Pages/CadastroUsuario/index';
+import {Home} from '../Pages/Home/index';
 import Header from '../components/Header';
-// import { Container } from './styles';
 
 const {Navigator, Screen} = createStackNavigator();
 export default function Routes() {
@@ -23,7 +23,14 @@ export default function Routes() {
                         headerShown: true,
                         header: () => <Header title='Home' showX={false}/>
                     }}/>
-              
+                <Screen
+                    name="Home"
+                    component={Home}
+                    options={{
+                        headerShown: true,
+                        header: () => <Header title='Home' showX={false}/>
+                    }}
+                />
             </Navigator>
         </NavigationContainer>
     );

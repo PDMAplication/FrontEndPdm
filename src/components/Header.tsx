@@ -47,9 +47,7 @@ const Header: React.FC<HeaderProps> = ({title, showX=true}) => {
 const styles = StyleSheet.create({
     container: {
         padding: 24,
-        backgroundColor: '#f9fafc',
-        borderBottomWidth: 1,
-        borderColor: '#dde3f0',
+        backgroundColor: '#9370DB',
         paddingTop: 44,
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -57,8 +55,8 @@ const styles = StyleSheet.create({
     },
     title: {
         fontFamily: 'Nunito_600SemiBold',
-        color: '#8fa7b3',
-        fontSize: 16,
+        color: '#363636	',
+        fontSize: 46,
     }
 });
 
